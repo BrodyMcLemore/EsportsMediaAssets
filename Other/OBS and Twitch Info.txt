@@ -1,0 +1,6 @@
+Twitch Login Info:
+	Username: BVUEsports
+	Password: BVUBeavers5291!
+
+Background Color Code:
+	#000082
