@@ -1,0 +1,312 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="6.25.0" title="Shotcut version 21.03.21" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1920" height="1080" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:00:03.960">
+    <property name="length">00:00:04.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgb24a</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">GreenBack.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:55:48</property>
+    <property name="shotcut:caption">GreenBack.png</property>
+    <property name="shotcut:hash">95880efd10996d6e80e64c96e925d58a</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">TopLeft.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:54:37</property>
+    <property name="shotcut:caption">TopLeft.png</property>
+    <property name="shotcut:hash">55f628524157a1c287760d33ce145635</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=0 0 1920 1080 1;00:00:00.240=-100 -100 1920 1080 1;00:00:00.480=-200 -200 1920 1080 1;00:00:00.720=-350 -350 1920 1080 1;00:00:00.960=-500 -540 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">TopRight.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:55:08</property>
+    <property name="shotcut:caption">TopRight.png</property>
+    <property name="shotcut:hash">024e6ab9e2de16494c210f084d2a6eb1</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:03.960"/>
+    <filter id="filter1" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=0 0 1920 1080 1;00:00:00.240=100 -100 1920 1080 1;00:00:00.480=200 -200 1920 1080 1;00:00:00.720=350 -350 1920 1080 1;00:00:00.960=500 -540 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </playlist>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">BotLeft.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:55:21</property>
+    <property name="shotcut:caption">BotLeft.png</property>
+    <property name="shotcut:hash">033904f728e015011ef0280d75c5ad58</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist3">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V4</property>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:03.960"/>
+    <filter id="filter2" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=0 0 1920 1080 1;00:00:00.240=-100 100 1920 1080 1;00:00:00.480=-200 200 1920 1080 1;00:00:00.720=-350 350 1920 1080 1;00:00:00.960=-500 540 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </playlist>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">BotRight.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:55:36</property>
+    <property name="shotcut:caption">BotRight.png</property>
+    <property name="shotcut:hash">39e5fca698ddb17eb1c0762bc87ae20a</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="playlist4">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V5</property>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:03.960"/>
+    <filter id="filter3" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=0 0 1920 1080 1;00:00:00.240=100 100 1920 1080 1;00:00:00.480=200 200 1920 1080 1;00:00:00.720=350 350 1920 1080 1;00:00:00.960=500 540 1920 1080 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </playlist>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/conma/Desktop/Esports Things for OBS/Logos + Pictures/BVU Beaver Head.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-08-25T17:58:52</property>
+    <property name="shotcut:caption">BVU Beaver Head.png</property>
+    <property name="shotcut:hash">0aeb97b4fa73c0b42180e98d1b657b07</property>
+    <property name="ignore_points">0</property>
+    <property name="global_feed">1</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">00:00:00.000=310.222 174.375 1299.56 731.25 1;00:00:00.920=959.944 539.719 0 0.5625 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist5">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V6</property>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <tractor id="tractor0" title="Shotcut version 21.03.21" global_feed="1" in="00:00:00.000" out="00:00:03.960">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2"/>
+    <track producer="playlist3"/>
+    <track producer="playlist4"/>
+    <track producer="playlist5"/>
+    <transition id="transition0">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition1">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">4</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">4</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition8">
+      <property name="a_track">0</property>
+      <property name="b_track">5</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition9">
+      <property name="a_track">1</property>
+      <property name="b_track">5</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition10">
+      <property name="a_track">0</property>
+      <property name="b_track">6</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition11">
+      <property name="a_track">1</property>
+      <property name="b_track">6</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
