@@ -3,7 +3,6 @@
 >This repo will store Streaming Assets (including images, mp3s, and art), clips, and other information.
 
 ## Folders
--------------------------------------
 ### Clips
 The Clips folder is a archive for all clips that have been posted.
 The clips will **NOT** have any information tagged with them, as this information can be found on the Esports Notion page.
